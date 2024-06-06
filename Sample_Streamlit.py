@@ -10,6 +10,6 @@ def main():
     st.write(".")
     st.header(":question:&:pencil: Queries & Result")
     st.write("channel details,playlist details,comment details and video details")
-
+    st.page_link("https://zany-couscous-5gvg9v9wqq4r3v4r9-8501.app.github.dev/",icon='👉',label=':red-background[CLICK HERE]')
 if __name__ == "__main__":
     main()
