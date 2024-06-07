@@ -1,4 +1,4 @@
-googleapiclient.discovery
+google-api-python-client
 matplotlib  
 pandas
 streamlit
