@@ -10,6 +10,6 @@ def main():
     st.write(".")
     st.header(":question:&:pencil: Queries & Result")
     st.write("channel details,playlist details,comment details and video details")
-    st.page_link("https://ytdatapreparation-3wcalt7bzmbzuiegak5zs4.streamlit.app/",icon='👉',label=':red-background[CLICK HERE]')
+    st.page_link("https://ytdatapreparation-3wcalt7bzmbzuiegak5zs4.streamlit.app/",icon='👉',label=':red-background[CLICK HERE FOR QUERY & RESULT]')
 if __name__ == "__main__":
     main()
