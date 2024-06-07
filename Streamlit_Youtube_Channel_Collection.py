@@ -1,4 +1,4 @@
-import streamlit.py as st
+import streamlit as st
 import pandas as pd
 
-st.title(":red["Youtube Channel"])  
+st.text("Youtube Channel")  
