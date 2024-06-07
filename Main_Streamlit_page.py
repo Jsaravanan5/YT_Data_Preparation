@@ -10,6 +10,6 @@ def main():
     st.write(".")
     st.header(":question:&:pencil: Queries & Result")
     st.write("channel details,playlist details,comment details and video details")
-    st.page_link("https://cautious-robot-q76g65rxj44h95px-8504.app.github.dev/",icon='👉',label=':red-background[CLICK HERE]')
+    st.page_link("",icon='👉',label=':red-background[CLICK HERE]')
 if __name__ == "__main__":
     main()
