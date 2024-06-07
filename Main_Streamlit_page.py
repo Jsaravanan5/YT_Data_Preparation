@@ -8,8 +8,9 @@ def main():
 
     st.header(":movie_camera: Youtube Channel Collection")
     st.write(".")
+    st.page_link("https://ytdatapreparation-cv68zz4dmo9reqjpa8beyw.streamlit.app/",icon='👉',label=':red-background]')
     st.header(":question:&:pencil: Queries & Result")
     st.write("channel details,playlist details,comment details and video details")
-    st.page_link("https://ytdatapreparation-3wcalt7bzmbzuiegak5zs4.streamlit.app/",icon='👉',label=':red-background[CLICK HERE FOR QUERY & RESULT]')
+    st.page_link("https://ytdatapreparation-n8dkghsqzccsyvr86zt3ee.streamlit.app/",icon='👉',label=':red-background[CLICK HERE FOR QUERY & RESULT]')
 if __name__ == "__main__":
     main()
