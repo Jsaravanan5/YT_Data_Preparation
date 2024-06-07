@@ -1,0 +1,7 @@
+googleapiclient.discovery
+matplotlib  
+pandas
+streamlit
+seaborn
+numpy
+
