@@ -10,7 +10,7 @@ def main():
     st.page_link("https://ytdatapreparation-cv68zz4dmo9reqjpa8beyw.streamlit.app/",icon='👉',label=':red-background[CLICK HERE FOR YOUTUBE CHANNEL COLLECTION]')
     
     st.header(":question:&:pencil: Queries & Result")
-    st.Write("***Analyze Based on the Given Question***")
+    st.write("***Analyze Based on the Given Question***")
     st.page_link("https://ytdatapreparation-n8dkghsqzccsyvr86zt3ee.streamlit.app/",icon='👉',label=':red-background[CLICK HERE FOR QUERY & RESULT]')
 if __name__ == "__main__":
     main()
