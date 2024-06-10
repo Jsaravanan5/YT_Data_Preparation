@@ -1,4 +1,4 @@
-Project Title: Youtube data harvesting and warehousing using streamlit application.
+**Project Title: Youtube data harvesting and warehousing using streamlit application.**
 
 Youtube_Channel_Data_Collection and Analysis 
 
