@@ -60,7 +60,7 @@ Question = st.selectbox(
      "7.What is the total number of views for each channel, and what are their corresponding channel names?",
      "8.What are the names of all the channels that have published videos in the year 2022?",
      "9.What is the average duration of all videos in each channel, and what are their corresponding channel names?",
-     "10.Which videos have the highest number of comments, and what are their corresponding channel names?"     
+     "10.Which videos have the highest number of comments, and what are their corresponding channel names?"),
     )
 
 if Question == "What are the names of all the videos and their corresponding channels?":
