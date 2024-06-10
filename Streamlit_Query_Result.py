@@ -46,8 +46,8 @@ def execute_query(query):
 
 
 st.image("https://upload.wikimedia.org/wikipedia/commons/9/90/Logo_of_YouTube_%282013-2015%29.svg", caption=None, width=None, use_column_width=None, clamp=False, channels='RGB', output_format='auto')
-st.title(:red"Youtube_Channel_Analysis")
-st.text("Welcome EVERYONE")
+st.title(":red[Youtube_Channel_Analysis]")
+st.text("WELCOME EVERYONE")
 
 Question = st.selectbox(
     " Please select a question:",
