@@ -1,8 +1,8 @@
 import pandas as pd
-from googleapiclient.discovery import build
+import googleapiclient.discovery
 import streamlit as st
 import datetime
-import plotly.express as px
+import matplotlib.pyplot as plt
 import mysql.connector
 
 
@@ -191,9 +191,6 @@ elif Question == "Which videos have the highest number of comments, and what are
         df9 = pd.DataFrame(result, columns=[ "Channel_Name","Title","Num_Comments"])
         # st.write(df9)
         st.dataframe(df9,hide_index=True)
-
-
-
 )
 
 
