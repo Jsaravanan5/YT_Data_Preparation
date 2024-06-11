@@ -1,10 +1,11 @@
 import streamlit as st
 import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
 
 
 data = {
   "calories": [420, 380, 390],
-  "duration": [50, 40, 45],
   "Age": [10,20,30]
  } 
 
@@ -26,5 +27,25 @@ Question = st.selectbox(
     )
 
 if Question == "2.Which channels have the most number of videos, and how many videos do they have?":
-    st.dataframe(df.reset_index())
+    #https://saturncloud.io/blog/how-to-start-index-at-1-for-pandas-dataframe/
+    df.index = df.index + 1
+    #df.index = np.arange(1, len(df) + 1)
+    calories = [420, 380, 390]
+    Age = [10,20,30]
+    st.dataframe(df)
+    fig, ax = plt.subplots()
+    ax.plot(calories,Age)
 
+    # Set the title and labels
+    ax.set_title("Line Chart")
+    ax.set_xlabel("Calories")
+    ax.set_ylabel("Age")
+
+    # Display the figure
+    st.title(":blue[Visualization:]")
+    st.pyplot(fig)
+    st.bar_chart(df) 
+ 
+  
+
+        
