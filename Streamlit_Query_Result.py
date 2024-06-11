@@ -74,7 +74,7 @@ if Question == "1.What are the names of all the videos and their corresponding c
      df = pd.DataFrame(result, columns=["Channel_Name","Title"])
      st.dataframe(df,hide_index=True)
 
-elif Question == "Which channels have the most number of videos, and how many videos do they have?":
+elif Question == "2.Which channels have the most number of videos, and how many videos do they have?":
         query = """
             SELECT Channel_Name, Total_videos 
             FROM channel_data
@@ -88,7 +88,7 @@ elif Question == "Which channels have the most number of videos, and how many vi
 
 
 
-elif Question == "What are the top 10 most viewed videos and their respective channels?":
+elif Question == "3.What are the top 10 most viewed videos and their respective channels?":
         query = """
                 select Channel_Name,Title,Views from video_data
                 order by Views desc limit 10;
@@ -100,7 +100,7 @@ elif Question == "What are the top 10 most viewed videos and their respective ch
 
 
 
-elif Question == "How many comments were made on each video, and what are their corresponding video names?" :
+elif Question == "4.How many comments were made on each video, and what are their corresponding video names?" :
         query = """
                 Select c.Channel_Name, v.comments,v.Title from channel_data as c join video_data as v on c.Channel_ID=v.Channel_ID;
                 """
@@ -111,7 +111,7 @@ elif Question == "How many comments were made on each video, and what are their 
 
 
 
-elif Question == "Which videos have the highest number of likes, and what are their corresponding channel names?" :
+elif Question == "5.Which videos have the highest number of likes, and what are their corresponding channel names?" :
         query = """
                 select c.Channel_Name,v.Title,v.Likes from channel_data as c join video_data as v on c.Channel_ID=v.Channel_ID
                 order by v.Likes desc;
@@ -122,7 +122,7 @@ elif Question == "Which videos have the highest number of likes, and what are th
         st.dataframe(df4,hide_index=True)
 
 
-elif Question == "What is the total number of likes for each video, and what are their corresponding video names?" :
+elif Question == "6.What is the total number of likes for each video, and what are their corresponding video names?" :
         query = """
                 SELECT Title, SUM(Likes) AS Total_Likes
                 FROM video_data
@@ -137,7 +137,7 @@ elif Question == "What is the total number of likes for each video, and what are
 
 
 
-elif Question == "What is the total number of views for each channel, and what are their corresponding channel names?" :
+elif Question == "7.What is the total number of views for each channel, and what are their corresponding channel names?" :
         query = """
                 select Channel_Name,views from channel_data order by views desc;
                 """
@@ -148,7 +148,7 @@ elif Question == "What is the total number of views for each channel, and what a
 
 
 
-elif Question == "What are the names of all the channels that have published videos in the year 2022?" :
+elif Question == "8.What are the names of all the channels that have published videos in the year 2022?" :
         query = """
                 select Channel_Name from video_data
                 where EXTRACT(YEAR FROM Publishdate) = 2022;
@@ -162,7 +162,7 @@ elif Question == "What are the names of all the channels that have published vid
 
 
 
-elif Question == "What is the average duration of all videos in each channel, and what are their corresponding channel names?" :
+elif Question == "9.What is the average duration of all videos in each channel, and what are their corresponding channel names?" :
         query = """
                 SELECT c.Channel_Name, AVG(v.Duration) AS Avg_Duration
                 FROM channel_data c
@@ -177,7 +177,7 @@ elif Question == "What is the average duration of all videos in each channel, an
 
 
 
-elif Question == "Which videos have the highest number of comments, and what are their corresponding channel names?" :
+elif Question == "10.Which videos have the highest number of comments, and what are their corresponding channel names?" :
         query = """
                 SELECT c.Channel_Name, v.Title, COUNT(co.Comment_Id) AS Num_Comments
                 FROM channel_data c
