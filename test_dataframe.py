@@ -28,12 +28,15 @@ Question = st.selectbox(
 
 if Question == "2.Which channels have the most number of videos, and how many videos do they have?":
     #https://saturncloud.io/blog/how-to-start-index-at-1-for-pandas-dataframe/
-    df.index = df.index + 1
+    df.index =df.index + 1
     #df.index = np.arange(1, len(df) + 1)
+    
+    st.dataframe(df)
+
+    #plot the dataframe
+    fig, ax = plt.subplots()
     calories = [420, 380, 390]
     Age = [10,20,30]
-    st.dataframe(df)
-    fig, ax = plt.subplots()
     ax.plot(calories,Age)
 
     # Set the title and labels
