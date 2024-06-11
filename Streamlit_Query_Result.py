@@ -63,7 +63,7 @@ Question = st.selectbox(
      "10.Which videos have the highest number of comments, and what are their corresponding channel names?"),
     )
 
-if Question == "What are the names of all the videos and their corresponding channels?":
+if Question == "1.What are the names of all the videos and their corresponding channels?":
      query = """
         SELECT c.Channel_Name, v.Title 
         FROM channel_data AS c 
