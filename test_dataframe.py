@@ -26,5 +26,5 @@ Question = st.selectbox(
     )
 
 if Question == "2.Which channels have the most number of videos, and how many videos do they have?":
-    st.dataframe(df,hide_index=True)
+    st.dataframe(df.reset_index())
 
