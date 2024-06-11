@@ -25,6 +25,6 @@ Question = st.selectbox(
      "10.Which videos have the highest number of comments, and what are their corresponding channel names?"),
     )
 
-if Question == "What are the names of all the videos and their corresponding channels?":
+if Question == "2.Which channels have the most number of videos, and how many videos do they have?":
     st.write(df)
 
