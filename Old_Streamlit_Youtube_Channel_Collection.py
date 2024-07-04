@@ -283,8 +283,8 @@ def create_tables(conn):
     try:
         # Execute table creation queries
         cursor.execute(channel_table_query)
-        #cursor.execute(video_table_query)
-        #cursor.execute(comment_table_query)
+        cursor.execute(video_table_query)
+        cursor.execute(comment_table_query)
         cursor.execute(playlist_table_query)
 
         conn.commit()
